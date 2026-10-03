@@ -1,6 +1,8 @@
 import { MetadataRoute } from 'next';
 import { sectors } from '@/data/sectors';
 
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://myrecruitltd.mu';
 
