@@ -1,0 +1,44 @@
+<svg viewBox="0 0 240 437" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pinGrad" x1="40" y1="20" x2="200" y2="340" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#ff3b30" />
+      <stop offset="45%" stop-color="#e00000" />
+      <stop offset="100%" stop-color="#990000" />
+    </linearGradient>
+    <linearGradient id="bevelGrad" x1="120" y1="75" x2="120" y2="155" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#800000" />
+      <stop offset="100%" stop-color="#ff4d4d" />
+    </linearGradient>
+    <filter id="pinShadow" x="-20%" y="-10%" width="140%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#800000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <!-- Bottom Tier Base Ring -->
+  <g>
+    <ellipse cx="120" cy="406" rx="82" ry="24" fill="#c00000" />
+    <ellipse cx="120" cy="401" rx="77" ry="22" fill="#ffffff" />
+    <ellipse cx="120" cy="399" rx="71" ry="19" fill="#e00000" />
+  </g>
+
+  <!-- Middle Tier Base Ring -->
+  <g>
+    <ellipse cx="120" cy="378" rx="62" ry="18" fill="#c00000" />
+    <ellipse cx="120" cy="374" rx="57" ry="16" fill="#ffffff" />
+    <ellipse cx="120" cy="372" rx="52" ry="14" fill="#e00000" />
+  </g>
+
+  <!-- Top Tier Base Ring -->
+  <g>
+    <ellipse cx="120" cy="352" rx="42" ry="13" fill="#c00000" />
+    <ellipse cx="120" cy="349" rx="37" ry="11" fill="#ffffff" />
+    <ellipse cx="120" cy="347" rx="32" ry="9" fill="#e00000" />
+  </g>
+
+  <!-- Pin Teardrop Body -->
+  <path d="M120 348 C116 312, 24 185, 24 116 A 96 96 0 0 1 216 116 C216 185, 124 312, 120 348 Z" fill="url(#pinGrad)" filter="url(#pinShadow)" />
+
+  <!-- Pin Inner Bevel and Cutout -->
+  <circle cx="120" cy="116" r="43" fill="url(#bevelGrad)" />
+  <circle cx="120" cy="116" r="36" fill="#ffffff" />
+</svg>
