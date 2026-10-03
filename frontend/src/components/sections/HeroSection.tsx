@@ -1,16 +1,20 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { siteConfig } from '@/lib/config';
 import { useLanguage } from '@/context/LanguageContext';
 import { ShieldCheck } from 'lucide-react';
+import mauritiusPinImg from '../../../public/mauritius-pin.png';
 
 const trustBadges = [
   {
     icon: (
-      <img
-        src="/mauritius-pin.png"
+      <Image
+        src={mauritiusPinImg}
         alt="Mauritius Based"
+        width={20}
+        height={20}
         className="w-5 h-5 object-contain shrink-0 drop-shadow-xs"
       />
     ),
