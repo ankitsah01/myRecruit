@@ -54,16 +54,16 @@ export function ContactSection() {
                 href: null,
               },
             ].map((item, i) => (
-              <div key={i} className="flex items-start gap-4 bg-white dark:bg-[#0c1a35] rounded-xl p-5 border border-slate-200/80 dark:border-slate-800 shadow-sm transition-colors">
-                <div className="w-10 h-10 rounded-xl bg-teal-50 dark:bg-teal-950/60 text-teal-600 dark:text-teal-400 flex items-center justify-center flex-shrink-0">
+              <div key={i} className="flex items-start gap-4 bg-white dark:bg-[#0c1a35] rounded-xl p-5 border border-slate-300/80 dark:border-slate-800 shadow-sm hover:border-black dark:hover:border-white transition-all">
+                <div className="w-10 h-10 rounded-xl bg-slate-900 text-white dark:bg-white dark:text-slate-900 flex items-center justify-center flex-shrink-0 shadow-xs">
                   {item.icon}
                 </div>
                 <div>
-                  <p className="text-xs font-semibold uppercase tracking-wider text-slate-400 dark:text-slate-400 mb-0.5">{item.label}</p>
+                  <p className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-slate-300 mb-0.5">{item.label}</p>
                   {item.href ? (
-                    <a href={item.href} className="text-sm font-medium text-slate-800 dark:text-slate-200 hover:text-teal-600 dark:hover:text-teal-400 transition-colors">{item.value}</a>
+                    <a href={item.href} className="text-base font-bold text-black dark:text-white hover:underline transition-all">{item.value}</a>
                   ) : (
-                    <p className="text-sm font-medium text-slate-800 dark:text-slate-200">{item.value}</p>
+                    <p className="text-base font-bold text-black dark:text-white">{item.value}</p>
                   )}
                 </div>
               </div>
